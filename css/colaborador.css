@@ -1,0 +1,109 @@
+/* Contenedor principal */
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #8a8282dc;
+  background-position: 0;
+  background-size: cover;
+}
+
+/* Cabecera del contenedor principal */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #000;
+}
+
+.header__options {
+  display: flex;
+  gap: 3rem;
+}
+
+.header__option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header__option--exit {
+  cursor: pointer;
+}
+
+.header h1,
+.header h2,
+.header h3 {
+  color: #fff;
+}
+
+/* Todas las clases del vista */
+.vista {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  height: 80vh;
+  margin: auto;
+  padding: 2rem;
+  background-color: #ffffff; /* Cambiado a fondo blanco */
+  border-radius: 1rem;
+}
+
+.vista__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vista__brand {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.vista__brand-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.vista__data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.vista__table {
+  display: flex;
+  padding-right: 0.2rem;
+}
+
+.vista__header {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container_mt-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+}

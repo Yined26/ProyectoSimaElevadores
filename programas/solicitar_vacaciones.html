@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Vacaciones</title>
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Cambia esto a tu archivo CSS -->
+</head>
+<body>
+    <main>
+        <h1>Solicitud de Vacaciones</h1>
+        <form action="calcular_vacaciones.php" method="POST">
+            <div>
+                <label for="id_colaborador">ID del Colaborador:</label>
+                <input type="number" id="id_colaborador" name="id_colaborador" required>
+            </div>
+            <div>
+                <label for="fecha_ingreso">Fecha de Ingreso:</label>
+                <input type="date" id="fecha_ingreso" name="fecha_ingreso" required>
+            </div>
+            <div>
+                <label for="fecha_inicio">Fecha de Inicio:</label>
+                <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+            </div>
+            <div>
+                <label for="fecha_fin">Fecha de Fin:</label>
+                <input type="date" id="fecha_fin" name="fecha_fin" required>
+            </div>
+            <button type="submit">Solicitar Vacaciones</button>
+        </form>
+    </main>
+</body>
+</html>

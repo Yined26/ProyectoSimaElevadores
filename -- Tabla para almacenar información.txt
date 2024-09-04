@@ -1,0 +1,26 @@
+-- Tabla para almacenar información de los certificados laborales
+CREATE TABLE certificados_laborales (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_cliente VARCHAR(100),
+    fecha_emision DATE,
+    contenido TEXT
+);
+
+-- Tabla para almacenar información de los desprendibles de nómina
+CREATE TABLE desprendibles_nomina (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    empleado_id INT,
+    fecha_pago DATE,
+    salario DECimaL(10, 2),
+    deductions DECimaL(10, 2),
+    total DECimaL(10, 2)
+);
+
+-- Tabla para almacenar información de los días de vacaciones
+CREATE TABLE dias_vacaciones (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    empleado_id INT,
+    fecha_inicio DATE,
+    fecha_fin DATE,
+    total_dias INT
+);
